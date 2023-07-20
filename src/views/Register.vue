@@ -55,9 +55,13 @@ const registerUserByGoogle = async () => {
 </template>
 
 <style scoped>
+
 .background-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.050)), url("backgroundimage.png");
-  min-height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 .reg-container {

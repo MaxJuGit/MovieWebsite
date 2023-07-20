@@ -2,10 +2,9 @@
 
 <template>
   <div class="hero-container">
-    <p class="p1">Limited movies, TV shows, and more.</p>
-    <p>Watch anywhere. Cancel anytime</p>
+    <p class="p1">Unlimited Movies To Experience.</p>
     <p>
-      Ready to watch? Enter your email to create or restart your membership.
+      Ready to watch? Sign up to unlock an endless adventure.
     </p>
     <div class="searchbar">
       <input type="text" placeholder="Email address (this doesn't work yet.)" name="email" />

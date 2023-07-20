@@ -41,7 +41,7 @@ button:hover {
 
 .logo {
   padding-left: 10px;
-  height: 60px;
+  height: 70px;
   cursor: pointer;
 }
 

@@ -65,10 +65,19 @@ const signInUserByGoogle = async () => {
 </template>
 
 <style scoped>
-.page-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.050)), url("backgroundimage.png");
+template{
+  height: 100%;
 }
-
+.page-container {
+  display: grid;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.050)), url("backgroundimage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
 .google {
   color: white;
 }
@@ -82,7 +91,7 @@ const signInUserByGoogle = async () => {
   font-size: 3rem;
   color: white;
   row-gap: 50px;
-  padding-bottom: 300px;
+  padding-bottom: 400px;
   padding-top: 200px;
   background-color: rgba(0, 0, 0, 0.7);
   width: 600px;
