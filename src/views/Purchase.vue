@@ -114,7 +114,7 @@ img {
 .logo {
   padding-left: 10px;
   height: 60px;
-  width: 184px;
+  width: 60px;
   cursor: pointer;
 }
 

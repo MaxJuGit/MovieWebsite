@@ -65,7 +65,6 @@ const signInUserByGoogle = async () => {
 </template>
 
 <style scoped>
-
 .page-container {
   display: grid;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.050)), url("backgroundimage.png");
@@ -76,6 +75,7 @@ const signInUserByGoogle = async () => {
   padding: 0;
   margin: 0;
 }
+
 .google {
   color: white;
 }
