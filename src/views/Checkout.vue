@@ -5,7 +5,9 @@ const store = useStore();
 
 <template>
   <div class="checkout-page">
-    <img class="logo" src="logo.png" @click="navigate" alt="logo" />
+    <RouterLink to="/store" custom v-slot="{ navigate }">
+      <img class="logo" @click="navigate" src="logo.png" alt="logo" />
+    </RouterLink>
     <h1 class="title">Checkout</h1>
 
     <div class="body" v-for="movie in Array.from(store.cart.values())">

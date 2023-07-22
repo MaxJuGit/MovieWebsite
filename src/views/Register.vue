@@ -37,7 +37,9 @@ const registerUserByGoogle = async () => {
 
 <template>
   <div class="background-container">
-    <img src="logo.png" alt="logo" />
+    <RouterLink to="/" custom v-slot="{ navigate }">
+      <img @click="navigate" src="logo.png" alt="logo" />
+    </RouterLink>
     <div class="reg-container">
       <h1>Sign Up</h1>
       <h2>Register by email</h2>

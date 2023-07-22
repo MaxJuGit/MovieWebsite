@@ -47,8 +47,9 @@ const signInUserByGoogle = async () => {
 
 <template>
   <div class="page-container">
-    <img src="logo.png" alt="logo" />
-
+    <RouterLink to="/" custom v-slot="{ navigate }">
+      <img class="logo" @click="navigate" src="logo.png" alt="logo" />
+    </RouterLink>
     <div class="login-container">
       <h1>Sign In</h1>
       <form @submit.prevent="signIn()">

@@ -13,7 +13,7 @@ const totalPages = ref(0);
 const showModal = ref(false);
 const selectedId = ref(0);
 
-const openModal = (id) => {
+const openModal = id => {
   showModal.value = true;
   selectedId.value = id;
 };
@@ -53,7 +53,9 @@ const search = async (direction) => {
 
 <template>
   <div class="topbar">
-    <img class="logo" src="logo.png" alt="logo" />
+    <RouterLink to="/store" custom v-slot="{ navigate }">
+      <img class="logo" @click="navigate" src="logo.png" alt="logo" />
+    </RouterLink>
     <RouterLink to="/checkout" custom v-slot="{ navigate }">
       <font-awesome-icon class="cart-icon" @click="navigate" role="link" icon="fa-solid fa-cart-shopping" />
     </RouterLink>
