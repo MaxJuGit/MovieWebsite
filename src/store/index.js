@@ -2,6 +2,7 @@ import { firestore } from "../firebase/index";
 import { doc, setDoc, getDoc } from "firebase/firestore";
 import { defineStore } from 'pinia'
 import axios from 'axios';
+const apiKey = import.meta.env.VITE_TMDB_API_KEY;
 
 export const useStore = defineStore('store', {
   state: () => {
@@ -17,7 +18,7 @@ export const useStore = defineStore('store', {
       genres.forEach(async (value, key) => {
         let data = (await axios.get("https://api.themoviedb.org/3/discover/movie", {
           params: {
-            api_key: "dd0cae472f29b3a03f6bddb5090875f0",
+            api_key: apiKey,
             with_genres: key,
             include_adult: false,
           }
