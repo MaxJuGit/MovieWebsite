@@ -20,7 +20,7 @@
       <a href="">Contact Us</a>
       <a href="">Speed Test</a>
       <a href="">Legal Notices</a>
-      <a href="">Only on Not Netflix</a>
+      <a href="">Only on M.flix</a>
     </div>
   </div>
 </template>

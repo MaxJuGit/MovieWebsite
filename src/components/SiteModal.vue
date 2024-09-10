@@ -5,11 +5,12 @@ import { useStore } from "../store/index.js";
 const store = useStore();
 const props = defineProps(["id"]);
 const emits = defineEmits(["toggleModal"]);
+const apiKey = import.meta.env.VITE_TMDB_API_KEY;
 
 let data = (
   await axios.get(`https://api.themoviedb.org/3/movie/${props.id}`, {
     params: {
-      api_key: "dd0cae472f29b3a03f6bddb5090875f0",
+      api_key: apiKey,
     },
   })
 ).data;
@@ -57,7 +58,7 @@ let data = (
 }
 
 .modal-outer-container .modal-inner-container {
-  background-color: rgba(75, 67, 67, 0.312);
+  background-color: rgba(0, 0, 0, 0.812);
   width: clamp(280px, 100%, 800px);
   height: 450px;
   position: relative;
